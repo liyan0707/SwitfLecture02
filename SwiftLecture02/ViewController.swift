@@ -33,13 +33,15 @@ class ViewController: UIViewController {
             print(" \( a ):\( b )")
         }
       //  let dicsorted = dic.sorted(by: { $0.key < $1.key })
-        let dicsorted = dic.sorted(by: { $0.value < $1.value })
-        for(a,b)in dicsorted {
+        let dicSorted = dic.sorted(by: { $0.value < $1.value })
+       
+        for(a,b)in dicSorted {
             print(" \( a ):\( b )")
         }
         var times : Int = 0
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: { smalltimer in
-           times = times + 1
+            times = times + 1
+            
             print("timer :\(smalltimer.isValid)")
             
         })
