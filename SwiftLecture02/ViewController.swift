@@ -17,7 +17,21 @@ class ViewController: UIViewController {
         print("Hello Swift!")
         var  name : String =  "yan"
         let  fullName = name + "Li "
-        
+        ///=======================
+        var english = ["A","B","C"]
+        var  ints : [Int] = [2,1,3]
+        var floats : Array<Float> = Array(repeating: 0, count: 5)
+        ints .sort() ;
+        for index in  0..<3{
+            print("\( english[index])")
+        }
+        for str in english {
+            print(str)
+        }
+        let  ss  = [1:"A",2:"C",3:"B"]
+        for(a,b)in ss {
+            print(" \( a ):\( b )")
+        }
        lbName?.text = fullName
         
         //
